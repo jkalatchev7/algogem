@@ -13,7 +13,7 @@ source venv/bin/activate
 pip install --upgrade pip
 
 # Install the required packages
-pip install black isort flake8
+pip install black isort flake8 alpaca-trade-api
 
 # Copy git push hook
 cp hooks/pre-push.sh .git/hooks/pre-push
