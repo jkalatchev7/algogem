@@ -13,7 +13,7 @@ source venv/bin/activate
 pip install --upgrade pip
 
 # Install the required packages
-pip install black isort mypy flake8 alpaca-trade-api
+pip install black isort mypy flake8 alpaca-trade-api yfinance ta pytest
 
 # Copy git push hook
 cp hooks/pre-push.sh .git/hooks/pre-push
