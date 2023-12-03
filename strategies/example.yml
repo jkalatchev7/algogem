@@ -1,0 +1,36 @@
+# example.yml
+
+strategy:
+  name: example
+  description: "Example Config"
+  indicators:
+    moving_average:
+      type: simple
+      period: 20
+#    moving_average:
+#      type: exponential
+#      period: 50
+    rsi:
+      period: 14
+    macd:
+      fast_period: 12
+      slow_period: 26
+      signal_period: 9
+    bollinger_bands:
+      period: 20
+      deviations: 2
+    stochastic_oscillator:
+      k_period: 14
+      d_period: 3
+      slowing: 3
+    average_true_range:
+      period: 14
+    ichimoku_cloud:
+      tenkan_sen_period: 9
+      kijun_sen_period: 26
+      senkou_span_b_period: 52
+    on_balance_volume:
+    relative_vigor_index:
+      period: 14
+    average_directional_index:
+      period: 14
