@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Set the Python version
-PYTHON_VERSION=3.10
+# Exit immediately if any command fails
+set -e
 
 # Create a virtual environment
-python${PYTHON_VERSION} -m venv venv
+python3 -m venv venv
 
 # Activate the virtual environment
 source venv/bin/activate
@@ -13,7 +13,7 @@ source venv/bin/activate
 pip install --upgrade pip
 
 # Install the required packages
-pip install black isort flake8
+pip install black isort mypy flake8 alpaca-trade-api
 
 # Copy git push hook
 cp hooks/pre-push.sh .git/hooks/pre-push
