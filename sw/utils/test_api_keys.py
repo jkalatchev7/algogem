@@ -1,9 +1,8 @@
 import os
 
-import alpaca_trade_api as tradeapi # type: ignore
-import pandas as pd
-from ta import add_all_ta_features # type: ignore
-from ta.utils import dropna # type: ignore
+import alpaca_trade_api as tradeapi  # type: ignore
+from ta import add_all_ta_features  # type: ignore
+from ta.utils import dropna  # type: ignore
 
 # Verify API's work by checking for expected account id
 api_key = os.environ.get("API_KEY")
