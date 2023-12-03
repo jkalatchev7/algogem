@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit immediately if any command fails
+set -e
+
 # Create a virtual environment
 python3 -m venv venv
 
