@@ -1,0 +1,10 @@
+backtest:
+  tickers:
+    - AAPL
+  start_date: 2012-02-01T01:01:01
+  duration: 
+    units: days
+    amount: 20
+  strategy: example_strategy
+  starting_cash: 100000
+  min_liquid: 0.1
