@@ -9,7 +9,6 @@ api_secret = os.environ.get("API_SECRET")
 # Replace 'your_api_key' and 'your_api_secret' with your actual Alpaca API key and secret
 base_url = "https://paper-api.alpaca.markets"  # For paper trading
 api = tradeapi.REST(api_key, api_secret, base_url, api_version="v2")
-
 # Get account information
 account = api.get_account()
 print(f"Account ID: ${account.id}")
