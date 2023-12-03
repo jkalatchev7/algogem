@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Set the Python version
-PYTHON_VERSION=3.10
-
 # Create a virtual environment
-python${PYTHON_VERSION} -m venv venv
+python3 -m venv venv
 
 # Activate the virtual environment
 source venv/bin/activate
