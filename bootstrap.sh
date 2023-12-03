@@ -17,6 +17,7 @@ pip install black isort flake8
 
 # Copy git push hook
 cp hooks/pre-push.sh .git/hooks/pre-push
+chmod +x .git/hooks/pre-push
 
 # Add bash alias
 echo 'alias algo="cd ~/personal/algogem && source venv/bin/activate"' >> ~/.bash_aliases
